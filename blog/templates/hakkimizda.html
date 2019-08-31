@@ -1,0 +1,570 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title -->
+    <title>Acm Hacettepe </title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="{% static 'img/maybe.png' %}">
+
+    <!-- Stylesheet -->
+     <link rel="stylesheet" href="{% static 'style.css' %}">
+
+
+</head>
+
+<body>
+     <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <!-- /Preloader -->
+
+    <!-- Header Area Start -->
+    <header class="header-area">
+        <div class="classy-nav-container breakpoint-off">
+            <div class="container">
+                <!-- Classy Menu -->
+                <nav class="classy-navbar justify-content-between" id="conferNav">
+
+                    <!-- Logo -->
+<img style="width: 15%" src="{% static 'img/sıfır.png' %}" alt="">
+                    <!-- Navbar Toggler -->
+                    <div class="classy-navbar-toggler">
+                        <span class="navbarToggler"><span></span><span></span><span></span></span>
+                    </div>
+
+                    <!-- Menu -->
+                    <div class="classy-menu">
+                        <!-- Menu Close Button -->
+                        <div class="classycloseIcon">
+                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                        </div>
+                        <!-- Nav Start -->
+                        <div class="classynav">
+                            <ul id="nav">
+                                <li class="active"><a href="/">Anasayfa</a></li>
+                                <li><a href="/">ACM Hacettepe</a>
+                                    <ul class="dropdown">
+                                        <li><a href="">- Anasayfa</a></li>
+                                        <li><a href="hakkimizda.html">- Biz Kimiz</a></li>
+                                        <li><a href="yonetim.html">- Yönetim Kurulu</a></li>
+                                        <li><a href="blog.html">- Blog</a></li>
+                                        <li><a href="dersler.html">- Dersler</a>
+
+                                        </li>
+                                        <li><a href="iletisim.html">- İletişim</a></li>
+
+                                    </ul>
+                                </li>
+                                <li><a href="yonetim.html">Yönetim Kurulu</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="iletisim.html">İletişim</a></li>
+                            </ul>
+
+
+                        </div>
+                        <!-- Nav End -->
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Header Area End -->
+
+    <!-- Breadcrumb Area Start -->
+    <section class="breadcrumb-area bg-img bg-gradient-overlay jarallax" style="background-image: url(img/bg-img/27.jpg);">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <div class="breadcrumb-content">
+                        <h2 class="page-title">Hakkımızda</h2>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">Anasayfa</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Biz Kimiz</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Area End -->
+
+    <!-- What We offer Area Start -->
+    <section class="what-we-offer-area section-padding-100-70">
+        <div class="container">
+            <div class="row">
+                <!-- Heading -->
+                <div class="col-12">
+                    <div class="section-heading-3 text-center wow fadeInUp" data-wow-delay="300ms">
+                        <p>ACM Hacettepe olarak</p>
+                        <h4>Neler Yapıyoruz</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Single We Offer Area -->
+                <div class="col-12 col-md-6 col-xl-3">
+                    <div class="single-we-offer-content text-center wow fadeInUp" data-wow-delay="0.3s">
+                        <!-- Icon -->
+                        <div class="offer-icon">
+                            <img src={% static 'img/icon.png' %}  alt="">
+                        </div>
+                        <h5>Söyleşi<br>Etkinlikleri</h5>
+                        <p>Detay</p>
+                    </div>
+                </div>
+                 <div class="col-12 col-md-6 col-xl-3">
+                    <div class="single-we-offer-content text-center wow fadeInUp" data-wow-delay="0.3s">
+                        <!-- Icon -->
+                        <div class="offer-icon">
+                            <img style="    -webkit-filter: invert(100%);" src={% static 'img/career.png' %}  alt="">
+                        </div>
+                        <h5>Kariyer<br>Etkinlikleri</h5>
+                        <p>Detay</p>
+                    </div>
+                  </div>
+                 <div class="col-12 col-md-6 col-xl-3">
+                    <div class="single-we-offer-content text-center wow fadeInUp" data-wow-delay="0.3s">
+                        <!-- Icon -->
+                        <div class="offer-icon">
+                            <img style="    -webkit-filter: invert(100%);" src={% static 'img/party.png' %}  alt="">
+                        </div>
+                        <h5>ACM Hacettepe<br>Partileri</h5>
+                        <p>Detay</p>
+                    </div>
+                </div>
+                 <div class="col-12 col-md-6 col-xl-3">
+                    <div class="single-we-offer-content text-center wow fadeInUp" data-wow-delay="0.3s">
+                        <!-- Icon -->
+                        <div class="offer-icon">
+                            <img style="    -webkit-filter: invert(100%);" src={% static 'img/programming.png' %}  alt="">
+                        </div>
+                        <h5>Yazılım Yarışmaları</h5>
+                        <p>Detay</p>
+                    </div>
+                </div>
+                 <div class="col-12 col-md-6 col-xl-3">
+                    <div class="single-we-offer-content text-center wow fadeInUp" data-wow-delay="0.3s">
+                        <!-- Icon -->
+                        <div class="offer-icon">
+                            <img style="    -webkit-filter: invert(100%);" src={% static 'img/team.png' %}  alt="">
+                        </div>
+                        <h5>Sosyal Sorumluluk<br>Projeleri</h5>
+                        <p>Detay</p>
+                    </div>
+                </div>
+                <!-- Single We Offer Area -->
+                <div class="col-12 col-md-6 col-xl-3">
+                    <div class="single-we-offer-content text-center wow fadeInUp" data-wow-delay="0.3s">
+                        <!-- Icon -->
+                        <div class="offer-icon">
+                            <img style=" -webkit-filter: invert(100%);" src={% static 'img/teknik.png' %}  alt="">
+                        </div>
+                        <h5>Teknik<br>
+                        Etkinlikler</h5>
+                        <p>Detay</p>
+                    </div>
+                </div>
+
+                <!-- Single We Offer Area -->
+                <div class="col-12 col-md-6 col-xl-3">
+                    <div class="single-we-offer-content text-center wow fadeInUp" data-wow-delay="0.3s">
+                        <!-- Icon -->
+                        <div class="offer-icon">
+                            <img style="    -webkit-filter: invert(100%);
+" src={% static 'img/confetti.png' %} alt="">
+                        </div>
+                        <h5>Sosyal<br>Etkinlikler</h5>
+                        <p>Detay</p>
+                    </div>
+                </div>
+
+                <!-- Single We Offer Area -->
+                <div class="col-12 col-md-6 col-xl-3">
+                    <div class="single-we-offer-content text-center wow fadeInUp" data-wow-delay="0.3s">
+                        <!-- Icon -->
+                        <div class="offer-icon">
+                            <img style="    -webkit-filter: invert(100%);" src={% static 'img/arge.png' %}  alt="">
+                        </div>
+                        <h5>Ar-Ge<br>Çalışmaları</h5>
+                        <p>Detay</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- What We offer Area End -->
+
+    <!-- About Us And Countdown Area Start -->
+    <section class="about-us-countdown-area section-padding-100-0" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- About Content -->
+                <div class="col-12 col-md-6">
+                    <div class="about-content-text mb-80">
+                        <h6 class="wow fadeInUp" data-wow-delay="300ms">Biz Kimiz</h6>
+                        <h3 class="wow fadeInUp" data-wow-delay="300ms">ACM NEDIR?</h3>
+                        <p class="wow fadeInUp" data-wow-delay="300ms" >ACM (Association for Computing Machinery ), bilgisayar mühendisliği bilimini bir araya getirmek için 1947’de kurulmuş ve gün geçtikçe büyüyerek dünya çapında tanınan bir kuruluş olmuştur. Merkezi New York şehrinde olan ACM, dünya genelinde çeşitli şubeleri, profesyonel kulüpleri, özel araştırma gruplarını ve öğrenci kollarını bünyesinde barındırmaktadır. ACM, Mesleki akademik yayın ve toplantı faaliyetlerinin yanı sıra bilgisayar bilimlerinin Nobel’i sayılan Turing Ödülü’nü veren kuruluş olarak da bilinir. Dünya genelini kapsayan üyelik sistemi ile bilişim teknolojisinin çeşitli alanları ile uğraşan profesyonellere ve öğrencilere kaynak sağlamaktadır.</p>
+                    </div>
+                </div>
+
+
+                <!-- About Thumb -->
+
+            </div>
+        </div>
+
+        <!-- Counter Up Area -->
+       <div class="container">
+            <div class="row align-items-center">
+                <!-- About Content -->
+                <div class="col-12 col-md-6">
+                    <div class="about-content-text mb-80">
+                        <h6 class="wow fadeInUp" data-wow-delay="300ms">Biz Kimiz</h6>
+                        <h3 class="wow fadeInUp" data-wow-delay="300ms">ACM Hacettepe Öğrenci Topluluğu</h3>
+                        <p class="wow fadeInUp" data-wow-delay="300ms" > ACM Hacettepe Öğrenci Topluluğu, ACM’ in Türkiye’de bulunan 13 öğrenci kulübünden birisidir. 2010 yılında kurulmuş olan topluluğumuz, kurulduğu günden bu yana aldığı 2500’ü aşkın üyelikle Hacettepe Üniversitesi’nin en büyük toplulukları arasında yer almaktadır. ACM Hacettepe Öğrenci Topluluğu, Türkiye’de dağınık halde bulunan bilişim sektörünü öğrenciler bazında bir araya getirmeyi, teknolojiye var olan ilgiyi arttırmayı ve teknolojiyi herkesin anlayacağı şekilde anlatmayı hedeflemektedir. Bununla birlikte düzenlediği seminer ve etkinliklerle, başta Hacettepe Üniversitesi öğrencileri olmak üzere kendini geliştirme amacı taşıyan tüm öğrencilere kariyerlerini planlamaları konusunda yardımcı olmaktadır. Bu öğrencilerin üst düzey yöneticilerle tanışmasını ve mezuniyet sonrası sağlıklı karar vermelerini sağlamak adına topluluğumuz, şirketler ve öğrenciler arasında köprü görevi görmektedir. Bilişim teknolojileri kuruluşu olarak ACM’ in vermiş olduğu yol haritasıyla ilerleyen topluluğumuzun tüm faaliyetleri, üniversite öğrencileri tarafından gerçekleştirilmekte ve üniversitemizdeki birçok bölüme hitap etmektedir. Böylece Hacettepe Üniversitesi öğrencilerinin her alandaki ortak ilgi ve fikirleri etrafında kendilerini özgür ve çağdaş bir şekilde ifade edebilmeleri amacıyla gerçekleştirebilecekleri sosyal, düşünsel ve kültürel bağlamdaki faaliyetleri için bir çatı oluşturarak altyapı çalışmalarına destek vermektir.</p>
+                    </div>
+                </div>
+
+
+                <!-- About Thumb -->
+
+            </div>
+        </div>
+    </section>
+    <!-- About Us And Countdown Area End -->
+
+
+
+    <!-- Our Client Area -->
+
+    <div class="our-client-area about-page section-padding-0-100">
+        <div class="container">
+            <div class="row">
+                <!-- Heading -->
+                <div class="col-12">
+                    <div class="section-heading-3 text-center wow fadeInUp" data-wow-delay="300ms">
+                        <br>                        <br>
+
+                        <h3 style="color: #df42b1">Üyelerin Gözünden </h3>
+                        <h4>ACM Hacettepe Öğrenci Topluluğu</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <!-- Client Slider -->
+                    <div class="client-area owl-carousel">
+                        <!-- Single Client Slide -->
+                        <div class="single-client-content bg-boxshadow wow fadeInUp" data-wow-delay="300ms">
+                            <div class="single-client-text about-page">
+                                <p>Çoh Hojdir</p>
+                                <!-- Thumb and info -->
+                                <div class="single-client-thumb-info d-flex align-items-center">
+                                    <!-- Thumb -->
+                                    <div class="single-client-thumb">
+                                        <img src="img/bg-img/15.jpg" alt="">
+                                    </div>
+                                    <!-- Info -->
+                                    <div class="client-info">
+                                        <h6>Ertürk Gürses</h6>
+                                        <p>Ar-Ge Birimler Başkanı</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Icon -->
+                            <div class="client-icon">
+                                <i class="zmdi zmdi-quote"></i>
+                            </div>
+                        </div>
+
+                        <!-- Single Client Slide -->
+                        <div class="single-client-content bg-boxshadow wow fadeInUp" data-wow-delay="300ms">
+                            <div class="single-client-text about-page">
+                                <p>Çoh Hojdir</p>
+                                <!-- Thumb and info -->
+                                <div class="single-client-thumb-info d-flex align-items-center">
+                                    <!-- Thumb -->
+                                    <div class="single-client-thumb">
+                                        <img src="img/bg-img/15.jpg" alt="">
+                                    </div>
+                                    <!-- Info -->
+                                    <div class="client-info">
+                                        <h6>Ertürk Gürses</h6>
+                                        <p>Ar-Ge Birimler Başkanı</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Icon -->
+                            <div class="client-icon">
+                                <i class="zmdi zmdi-quote"></i>
+                            </div>
+                        </div>
+                        <div class="single-client-content bg-boxshadow wow fadeInUp" data-wow-delay="300ms">
+                            <div class="single-client-text about-page">
+                                <p>Çoh Hojdir</p>
+                                <!-- Thumb and info -->
+                                <div class="single-client-thumb-info d-flex align-items-center">
+                                    <!-- Thumb -->
+                                    <div class="single-client-thumb">
+                                        <img src="img/bg-img/15.jpg" alt="">
+                                    </div>
+                                    <!-- Info -->
+                                    <div class="client-info">
+                                        <h6>Ertürk Gürses</h6>
+                                        <p>Ar-Ge Birimler Başkanı</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Icon -->
+                            <div class="client-icon">
+                                <i class="zmdi zmdi-quote"></i>
+                            </div>
+                        </div>
+                        <div class="single-client-content bg-boxshadow wow fadeInUp" data-wow-delay="300ms">
+                            <div class="single-client-text about-page">
+                                <p>Çoh Hojdir</p>
+                                <!-- Thumb and info -->
+                                <div class="single-client-thumb-info d-flex align-items-center">
+                                    <!-- Thumb -->
+                                    <div class="single-client-thumb">
+                                        <img src="img/bg-img/15.jpg" alt="">
+                                    </div>
+                                    <!-- Info -->
+                                    <div class="client-info">
+                                        <h6>Ertürk Gürses</h6>
+                                        <p>Ar-Ge Birimler Başkanı</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Icon -->
+                            <div class="client-icon">
+                                <i class="zmdi zmdi-quote"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Our Client Area -->
+
+    <!-- Contact Area Start -->
+    <section class="contact-our-area section-padding-100-0">
+        <div class="container">
+            <div class="row">
+                <!-- Heading -->
+                <div class="col-12">
+                    <div class="section-heading-2 text-center wow fadeInUp" data-wow-delay="300ms">
+                        <p>Sorunuz Mu Var?</p>
+                        <h4>Bize Ulaşın</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-between">
+                <div class="col-12 col-sm-3">
+                    <div class="contact-information mb-100">
+                        <!-- Single Contact Info -->
+                        <div class="single-contact-info wow fadeInUp" data-wow-delay="300ms">
+                            <p>Adres:</p>
+                            <h6>Hacettepe Üniversitesi Beytepe Kampüsü</h6>
+                        </div>
+                        <!-- Single Contact Info -->
+                        <div class="single-contact-info wow fadeInUp" data-wow-delay="300ms">
+                            <p>Phone:</p>
+                            <h6>(1212121212</h6>
+                        </div>
+                        <!-- Single Contact Info -->
+                        <div class="single-contact-info wow fadeInUp" data-wow-delay="300ms">
+                            <p>Email:</p>
+                            <h6>acmhacettepe@gmail.com</h6>
+                        </div>
+                        <!-- Single Contact Info -->
+                        <div class="single-contact-info wow fadeInUp" data-wow-delay="300ms">
+                            <p>Website:</p>
+                            <h6>www.acm.com</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-8">
+                    <!-- Contact Form -->
+                    <div class="contact_from_area mb-100 clearfix wow fadeInUp" data-wow-delay="300ms">
+                        <div class="contact_form">
+                            <form action="mail.php" method="post" id="main_contact_form">
+                                <div class="contact_input_area">
+                                    <div id="success_fail_info"></div>
+                                    <div class="row">
+                                        <!-- Form Group -->
+                                        <div class="col-12 col-lg-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control mb-30" name="name" id="name" placeholder="Ad">
+                                            </div>
+                                        </div>
+                                        <!-- Form Group -->
+                                        <div class="col-12 col-lg-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control mb-30" name="name" id="name2" placeholder="Soyad">
+                                            </div>
+                                        </div>
+                                        <!-- Form Group -->
+                                        <div class="col-12 col-lg-6">
+                                            <div class="form-group">
+                                                <input type="email" class="form-control mb-30" name="email" id="email" placeholder="E-mail">
+                                            </div>
+                                        </div>
+                                        <!-- Form Group -->
+                                        <div class="col-12 col-lg-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control mb-30" name="subject" id="subject" placeholder="Telefon Numarası">
+                                            </div>
+                                        </div>
+                                        <!-- Form Group -->
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <textarea name="message" class="form-control mb-30" id="message" cols="30" rows="6" placeholder="Mesaj "></textarea>
+                                            </div>
+                                        </div>
+                                        <!-- Button -->
+                                        <div class="col-12">
+                                            <button type="submit" class="btn confer-btn">Mesajı Gönder <i class="zmdi zmdi-long-arrow-right"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Area End -->
+
+    <!-- Footer Area Start -->
+    <footer class="footer-area bg-img bg-overlay-2 section-padding-100-0">
+        <!-- Main Footer Area -->
+        <div class="main-footer-area">
+            <div class="container">
+                <div class="row">
+                    <!-- Single Footer Widget Area -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget mb-60 wow fadeInUp" data-wow-delay="300ms">
+                            <!-- Footer Logo -->
+                            <a href="#" class="footer-logo"><img style="width: 60%" src="{% static 'img/beyaz.png' %}" alt=""></a>
+                            <p>Aile Hortumu</p>
+
+                            <!-- Social Info -->
+                            <div class="social-info">
+                                <a href="#"><i class="zmdi zmdi-facebook"></i></a>
+                                <a href="#"><i class="zmdi zmdi-instagram"></i></a>
+                                <a href="#"><i class="zmdi zmdi-twitter"></i></a>
+                                <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Footer Widget Area -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget mb-60 wow fadeInUp" data-wow-delay="300ms">
+                            <!-- Widget Title -->
+                            <h5 class="widget-title">İletişim</h5>
+
+                            <!-- Contact Area -->
+                            <div class="footer-contact-info">
+                                <p><i class="zmdi zmdi-map"></i> Hacettepe Üniversitesi</p>
+                                <p><i class="zmdi zmdi-phone"></i> (121212121221)</p>
+                                <p><i class="zmdi zmdi-email"></i> acmhacettepe@gmail.com</p>
+                                <p><i class="zmdi zmdi-globe"></i> www.acm.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+    <!-- Single Footer Widget Area -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget mb-60 wow fadeInUp" data-wow-delay="300ms">
+                            <!-- Widget Title -->
+
+                            <!-- Footer Nav -->
+                            <ul class="footer-nav">
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Single Footer Widget Area -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget mb-60 wow fadeInUp" data-wow-delay="300ms">
+                            <!-- Widget Title -->
+                            <h5 class="widget-title">Galeri</h5>
+
+                            <!-- Footer Gallery -->
+                            <div class="footer-gallery">
+                                <div class="row">
+                                    {% for gonderi in gonderiler %}
+                                    <div class="col-4">
+                                        <a href="{{ gonderi.blog_resim.url}}" class="single-gallery-item"><img src=" {{ gonderi.slide_resim.url}}" alt=""></a>
+                                    </div>
+                                   {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copywrite Area -->
+        <div class="container">
+            <div class="copywrite-content">
+                <div class="row">
+                    <!-- Copywrite Text -->
+                    <div class="col-12 col-md-6">
+                        <div class="copywrite-text">
+                            <p>
+                                ACM Hacettepe Devolopers
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Footer Menu -->
+                    <div class="col-12 col-md-6">
+                        <div class="footer-menu">
+                            <ul class="nav">
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Area End -->
+
+    <!-- **** All JS Files ***** -->
+    <!-- jQuery 2.2.4 -->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <!-- Popper -->
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <!-- Bootstrap -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <!-- All Plugins -->
+    <script src="{% static 'js/confer.bundle.js' %}"></script>
+    <!-- Active -->
+    <script src="{% static 'js/default-assets/active.js' %}"></script>
+
+</body>
+
+</html>

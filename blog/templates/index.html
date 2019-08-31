@@ -1,0 +1,376 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link href="https://cdn.materialdesignicons.com/4.2.95/css/materialdesignicons.min.css" rel="stylesheet">
+    <title>ACM Hacettepe</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="{% static 'img/maybe.png' %}">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <!-- /Preloader -->
+
+    <!-- Header Area Start -->
+    <header class="header-area">
+        <div class="classy-nav-container breakpoint-off">
+            <div class="container">
+                <!-- Classy Menu -->
+                <nav class="classy-navbar justify-content-between" id="conferNav">
+
+                    <!-- Logo -->
+<img style="width: 15%" src="{% static 'img/sıfır.png' %}" alt="">
+                    <!-- Navbar Toggler -->
+                    <div class="classy-navbar-toggler">
+                        <span class="navbarToggler"><span></span><span></span><span></span></span>
+                    </div>
+
+                    <!-- Menu -->
+                    <div class="classy-menu">
+                        <!-- Menu Close Button -->
+                        <div class="classycloseIcon">
+                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                        </div>
+                        <!-- Nav Start -->
+                        <div class="classynav">
+                            <ul id="nav">
+                                <li class="active"><a href="/">Anasayfa</a></li>
+                                <li><a href="/">ACM Hacettepe</a>
+                                    <ul class="dropdown">
+                                        <li><a href="">- Anasayfa</a></li>
+                                        <li><a href="hakkimizda.html">- Biz Kimiz</a></li>
+                                        <li><a href="yonetim.html">- Yönetim Kurulu</a></li>
+                                        <li><a href="blog.html">- Blog</a></li>
+                                        <li><a href="dersler.html">- Dersler</a>
+
+                                        </li>
+                                        <li><a href="iletisim.html">- İletişim</a></li>
+
+                                    </ul>
+                                </li>
+                                <li><a href="yonetim.html">Yönetim Kurulu</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="iletisim.html">İletişim</a></li>
+                            </ul>
+
+
+                        </div>
+                        <!-- Nav End -->
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Header Area End -->
+
+    <!-- Welcome Area Start -->
+    <section class="welcome-area">
+        <div class="welcome-slides owl-carousel">
+
+           {% for gonderi in gonderiler %}
+            <!-- Single Slide -->
+          <div class="single-welcome-slide bg-img bg-overlay jarallax" style="background-image: url({{ MEDIA_URL }}{{ gonderi.slide_resim }});">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <!-- Welcome Text -->
+                        <div class="col-12">
+                            <div class="welcome-text-two text-center">
+                                <h5 data-animation="fadeInUp" data-delay="100ms" style="font-size: 25px!important;">{{genderi.tercihi_mini_baslik}}</h5  >
+                                <h2 data-animation="fadeInUp" data-delay="300ms">{{ gonderi.etkinlik_adi }}</h2>
+                                <!-- Event Meta -->
+                                <div class="event-meta" data-animation="fadeInUp" data-delay="500ms">
+                                    <a class="event-date" href="#"><i class="zmdi zmdi-account"></i> {{ gonderi.saat_tarih }}</a>
+                                    <a class="event-author" href="#"><i class="zmdi zmdi-alarm-check"></i> {{ gonderi.yer }}</a>
+                                </div>
+                                <div class="hero-btn-group" data-animation="fadeInUp" data-delay="700ms">
+                                    <a href="http://{{ gonderi.etkinlik_sitesi }}" class="btn confer-btn m-2">Etkinlik Sayfası <i class="zmdi zmdi-long-arrow-right"></i></a>
+                                    <a href="blog.html" class="btn confer-btn m-2">Tüm Etkinlikler <i class="zmdi zmdi-long-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+
+
+
+        <!-- Scroll Icon -->
+        <div class="icon-scroll" id="scrollDown"></div>
+        </div>
+    </section>
+    <!-- Welcome Area End -->
+
+   
+
+
+    
+
+
+    <!-- Our Blog Area Start -->
+    <section class="our-blog-area bg-img bg-gradient-overlay section-padding-100-60" style="background-image: url(img/bg-img/17.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Heading -->
+                    <div class="section-heading text-center wow fadeInUp" data-wow-delay="300ms">
+                        <h4>Duyurular</h4>
+                    </div>
+                </div>
+            {% for duyuru in duyurular %}
+
+
+                <!-- Single Blog Area -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-blog-area wow fadeInUp" data-wow-delay="300ms">
+                        <!-- Single blog Thumb -->
+                        <div class="single-blog-thumb">
+                            <img src="{{ duyuru.resim.url }}" alt="">
+                        </div>
+                        <div class="single-blog-text text-center">
+                            <a class="blog-title" href="#">{{ duyuru.duyuru_baslik }}</a>
+                            <!-- Post Meta -->
+                            <div class="post-meta">
+                                <a class="post-date" href="#"><i class="zmdi zmdi-alarm-check"></i> {{ duyuru.saat_tarih }}</a><br>
+                                <a class="post-author" href="#"><i class="zmdi zmdi-account"></i> {{ duyuru.koordinator }}</a>
+                            </div>
+                            <p>{{ duyuru.icerik }}</p>
+                        </div>
+                        <div class="blog-btn">
+                            <a href="#"><i class="zmdi zmdi-long-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+
+
+
+
+            </div>
+        </div>
+    </section>
+    <!-- Our Blog Area End -->
+
+    <!-- Contact Area Start -->
+    <section class="contact-our-area section-padding-100-0">
+        <div class="container">
+            <div class="row">
+                <!-- Heading -->
+                <div class="col-12">
+                    <div class="section-heading-2 text-center wow fadeInUp" data-wow-delay="300ms">
+                        <p>Sorunuz Mu Var?</p>
+                        <h4>Bize Ulaşın</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-between">
+                <div class="col-12 col-sm-3">
+                    <div class="contact-information mb-100">
+                        <!-- Single Contact Info -->
+                        <div class="single-contact-info wow fadeInUp" data-wow-delay="300ms">
+                            <p>Adres:</p>
+                            <h6>Hacettepe Üniversitesi Beytepe Kampüsü</h6>
+                        </div>
+                        <!-- Single Contact Info -->
+                        <div class="single-contact-info wow fadeInUp" data-wow-delay="300ms">
+                            <p>Phone:</p>
+                            <h6>(1212121212</h6>
+                        </div>
+                        <!-- Single Contact Info -->
+                        <div class="single-contact-info wow fadeInUp" data-wow-delay="300ms">
+                            <p>Email:</p>
+                            <h6>acmhacettepe@gmail.com</h6>
+                        </div>
+                        <!-- Single Contact Info -->
+                        <div class="single-contact-info wow fadeInUp" data-wow-delay="300ms">
+                            <p>Website:</p>
+                            <h6>www.acm.com</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-8">
+                    <!-- Contact Form -->
+                    <div class="contact_from_area mb-100 clearfix wow fadeInUp" data-wow-delay="300ms">
+                        <div class="contact_form">
+                            <form action="mail.php" method="post" id="main_contact_form">
+                                <div class="contact_input_area">
+                                    <div id="success_fail_info"></div>
+                                    <div class="row">
+                                        <!-- Form Group -->
+                                        <div class="col-12 col-lg-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control mb-30" name="name" id="name" placeholder="Ad">
+                                            </div>
+                                        </div>
+                                        <!-- Form Group -->
+                                        <div class="col-12 col-lg-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control mb-30" name="name" id="name2" placeholder="Soyad">
+                                            </div>
+                                        </div>
+                                        <!-- Form Group -->
+                                        <div class="col-12 col-lg-6">
+                                            <div class="form-group">
+                                                <input type="email" class="form-control mb-30" name="email" id="email" placeholder="E-mail">
+                                            </div>
+                                        </div>
+                                        <!-- Form Group -->
+                                        <div class="col-12 col-lg-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control mb-30" name="subject" id="subject" placeholder="Telefon Numarası">
+                                            </div>
+                                        </div>
+                                        <!-- Form Group -->
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <textarea name="message" class="form-control mb-30" id="message" cols="30" rows="6" placeholder="Mesaj"></textarea>
+                                            </div>
+                                        </div>
+                                        <!-- Button -->
+                                        <div class="col-12">
+                                            <button type="submit" class="btn confer-btn">Mesajı Gönder <i class="zmdi zmdi-long-arrow-right"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Area End -->
+
+    <!-- Footer Area Start -->
+    <footer class="footer-area bg-img bg-overlay-2 section-padding-100-0">
+        <!-- Main Footer Area -->
+        <div class="main-footer-area">
+            <div class="container">
+                <div class="row">
+                    <!-- Single Footer Widget Area -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget mb-60 wow fadeInUp" data-wow-delay="300ms">
+                            <!-- Footer Logo -->
+                            <a href="#" class="footer-logo"><img style="width: 60%" src="{% static 'img/beyaz.png' %}" alt="">
+</a>
+                            <p>Aile Hortumu</p>
+
+                            <!-- Social Info -->
+                            <div class="social-info">
+                                <a href="#"><i class="zmdi zmdi-facebook"></i></a>
+                                <a href="#"><i class="zmdi zmdi-instagram"></i></a>
+                                <a href="#"><i class="zmdi zmdi-twitter"></i></a>
+                                <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Footer Widget Area -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget mb-60 wow fadeInUp" data-wow-delay="300ms">
+                            <!-- Widget Title -->
+                            <h5 class="widget-title">İletişim</h5>
+
+                            <!-- Contact Area -->
+                            <div class="footer-contact-info">
+                                <p><i class="zmdi zmdi-map"></i> Hacettepe Üniversitesi</p>
+                                <p><i class="zmdi zmdi-phone"></i> (121212121221)</p>
+                                <p><i class="zmdi zmdi-email"></i> acmhacettepe@gmail.com</p>
+                                <p><i class="zmdi zmdi-globe"></i> www.acm.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Footer Widget Area -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget mb-60 wow fadeInUp" data-wow-delay="300ms">
+                            <!-- Widget Title -->
+
+                            <!-- Footer Nav -->
+                            <ul class="footer-nav">
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Single Footer Widget Area -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget mb-60 wow fadeInUp" data-wow-delay="300ms">
+                            <!-- Widget Title -->
+                            <h5 class="widget-title">Galeri</h5>
+
+                            <!-- Footer Gallery -->
+                            <div class="footer-gallery">
+                                <div class="row">
+                                    {% for gonderi in gonderiler %}
+                                    <div class="col-4">
+                                        <a href="{{ gonderi.blog_resim.url}}" class="single-gallery-item"><img src=" {{ gonderi.slide_resim.url}}" alt=""></a>
+                                    </div>
+                                   {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copywrite Area -->
+        <div class="container">
+            <div class="copywrite-content">
+                <div class="row">
+                    <!-- Copywrite Text -->
+                    <div class="col-12 col-md-6">
+                        <div class="copywrite-text">
+                            <p>
+                                ACM Hacettepe Devolopers
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Footer Menu -->
+                    <div class="col-12 col-md-6">
+                        <div class="footer-menu">
+                            <ul class="nav">
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Area End -->
+
+    <!-- **** All JS Files ***** -->
+    <!-- jQuery 2.2.4 -->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <!-- Popper -->
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <!-- Bootstrap -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <!-- All Plugins -->
+    <script src="{% static 'js/confer.bundle.js' %}"></script>
+    <!-- Active -->
+    <script src="{% static 'js/default-assets/active.js' %}"></script>
+
+</body>
+
+</html>

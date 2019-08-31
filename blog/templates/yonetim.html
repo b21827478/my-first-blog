@@ -1,0 +1,670 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title -->
+    <title>Acm Hacettepe </title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="{% static 'img/maybe.png' %}">
+
+    <!-- Stylesheet -->
+     <link rel="stylesheet" href="{% static 'style.css' %}">
+
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <!-- /Preloader -->
+
+    <!-- Header Area Start -->
+    <header class="header-area">
+        <div class="classy-nav-container breakpoint-off">
+            <div class="container">
+                <!-- Classy Menu -->
+                <nav class="classy-navbar justify-content-between" id="conferNav">
+
+                    <!-- Logo -->
+<img style="width: 15%" src="{% static 'img/sıfır.png' %}" alt="">
+                    <!-- Navbar Toggler -->
+                    <div class="classy-navbar-toggler">
+                        <span class="navbarToggler"><span></span><span></span><span></span></span>
+                    </div>
+
+                    <!-- Menu -->
+                    <div class="classy-menu">
+                        <!-- Menu Close Button -->
+                        <div class="classycloseIcon">
+                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                        </div>
+                        <!-- Nav Start -->
+                        <div class="classynav">
+                            <ul id="nav">
+                                <li class="active"><a href="/">Anasayfa</a></li>
+                                <li><a href="/">ACM Hacettepe</a>
+                                    <ul class="dropdown">
+                                        <li><a href="/">- Anasayfa</a></li>
+                                        <li><a href="hakkimizda.html">- Biz Kimiz</a></li>
+                                        <li><a href="yonetim.html">- Yönetim Kurulu</a></li>
+                                        <li><a href="blog.html">- Blog</a></li>
+                                        <li><a href="dersler.html">- Dersler</a>
+
+                                        </li>
+                                        <li><a href="iletisim.html">- İletişim</a></li>
+
+                                    </ul>
+                                </li>
+                                <li><a href="yonetim.html">Yönetim Kurulu</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="iletisim.html">İletişim</a></li>
+                            </ul>
+
+
+                        </div>
+                        <!-- Nav End -->
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Header Area End -->
+
+    <!-- Breadcrumb Area Start -->
+    <section class="breadcrumb-area bg-img bg-gradient-overlay jarallax" style="background-image: url(img/bg-img/37.jpg);">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <div class="breadcrumb-content">
+                        <h2 class="page-title">Yönetim Kurulu</h2>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="">Anasayfa</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Yönetim Kurulu</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Area End -->
+
+    <!-- Our Speakings Area Start -->
+    <div class="our-speaker-area section-padding-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-4 mx-auto mx-auto">
+                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                        <!-- Thumb -->
+                        <div class="speaker-single-thumb">
+                            <img src="{% static 'img/firat.jpeg' %}" alt="">
+                        </div>
+                        <!-- Social Info -->
+                        <div class="social-info">
+                            <a href="#"><i class="zmdi zmdi-facebook"></i></a>
+                            <a href="#"><i class="zmdi zmdi-instagram"></i></a>
+                            <a href="#"><i class="zmdi zmdi-twitter"></i></a>
+                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
+                        </div>
+                        <!-- Info -->
+                        <div class="speaker-info">
+                            <h5>Fırathan Özyıldırım</h5>
+                            <p>Yönetim Kurulu Başkanı</p>
+                        </div>
+                    </div>
+                </div></div>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-4 mx-auto mx-auto">
+                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                        <!-- Thumb -->
+                        <div class="speaker-single-thumb">
+                            <img src="{% static 'img/guney.jpg' %}" alt="">
+                        </div>
+                        <!-- Social Info -->
+                        <div class="social-info">
+                            <a href="#"><i class="zmdi zmdi-facebook"></i></a>
+                            <a href="#"><i class="zmdi zmdi-instagram"></i></a>
+                            <a href="#"><i class="zmdi zmdi-twitter"></i></a>
+                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
+                        </div>
+                        <!-- Info -->
+                        <div class="speaker-info">
+                            <h5>Güney Kırık</h5>
+                            <p>Başkan Danışmanı</p>
+                        </div>
+                    </div>
+                </div>  <div class="col-12 col-sm-6 col-lg-4 mx-auto mx-auto">
+                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                        <!-- Thumb -->
+                        <div class="speaker-single-thumb">
+                            <img src="{% static 'img/emre.jpeg' %}" alt="">
+                        </div>
+                        <!-- Social Info -->
+                        <div class="social-info">
+                            <a href="#"><i class="zmdi zmdi-facebook"></i></a>
+                            <a href="#"><i class="zmdi zmdi-instagram"></i></a>
+                            <a href="#"><i class="zmdi zmdi-twitter"></i></a>
+                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
+                        </div>
+                        <!-- Info -->
+                        <div class="speaker-info">
+                            <h5>Emre Kösen</h5>
+                            <p>Başkan Danışmanı</p>
+                        </div>
+                    </div>
+                </div></div>
+             <div class="row">
+                 <div class="col-12 col-sm-6 col-lg-4 mx-auto mx-auto">
+                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                        <!-- Thumb -->
+                        <div class="speaker-single-thumb">
+                            <img src="{% static 'img/burak.jpg' %}" alt="">
+                        </div>
+                        <!-- Social Info -->
+                        <div class="social-info">
+                            <a href="#"><i class="zmdi zmdi-facebook"></i></a>
+                            <a href="#"><i class="zmdi zmdi-instagram"></i></a>
+                            <a href="#"><i class="zmdi zmdi-twitter"></i></a>
+                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
+                        </div>
+                        <!-- Info -->
+                        <div class="speaker-info">
+                            <h5>BAŞKAN YARDIMCISI
+ </h5>
+                            <p>Burak Demirtaş
+</p>
+                        </div>
+                    </div>
+                </div>  <div class="col-12 col-sm-6 col-lg-4 mx-auto mx-auto">
+                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                        <!-- Thumb -->
+                        <div class="speaker-single-thumb">
+                            <img src="{% static 'img/evliya.jpeg' %}" alt="">
+                        </div>
+                        <!-- Social Info -->
+                        <div class="social-info">
+                            <a href="#"><i class="zmdi zmdi-facebook"></i></a>
+                            <a href="#"><i class="zmdi zmdi-instagram"></i></a>
+                            <a href="#"><i class="zmdi zmdi-twitter"></i></a>
+                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
+                        </div>
+                        <!-- Info -->
+                        <div class="speaker-info">
+                            <h5>BAŞKAN YARDIMCISI
+</h5>
+                            <p>Evliya Diyar Kaya
+</p>
+                        </div>
+                    </div>
+                </div></div>
+            <div class="row">
+                <!-- Single Speaker Area -->
+                <div class="col-12 col-sm-6 col-lg-4 mx-auto mx-auto">
+                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                        <!-- Thumb -->
+                        <div class="speaker-single-thumb">
+                            <img src="{% static 'img/eylul.jfif' %}" alt="">
+                        </div>
+                        <!-- Social Info -->
+                        <div class="social-info">
+                            <a href="#"><i class="zmdi zmdi-facebook"></i></a>
+                            <a href="#"><i class="zmdi zmdi-instagram"></i></a>
+                            <a href="#"><i class="zmdi zmdi-twitter"></i></a>
+                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
+                        </div>
+                        <!-- Info -->
+                        <div class="speaker-info">
+                            <h5>GENEL SEKRETER
+</h5>
+                            <p>Eylül Tuncel
+</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Speaker Area -->
+                <div class="col-12 col-sm-6 col-lg-4 mx-auto mx-auto">
+                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                        <!-- Thumb -->
+                        <div class="speaker-single-thumb">
+                            <img src="{% static 'img/aras.jfif' %}" alt="">
+                        </div>
+                        <!-- Social Info -->
+                        <div class="social-info">
+                            <a href="#"><i class="zmdi zmdi-facebook"></i></a>
+                            <a href="#"><i class="zmdi zmdi-instagram"></i></a>
+                            <a href="#"><i class="zmdi zmdi-twitter"></i></a>
+                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
+                        </div>
+                        <!-- Info -->
+                        <div class="speaker-info">
+                            <h5>SAYMAN</h5>
+                            <p>Aras Deniz Emeksiz
+</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                 <div class="col-12 col-sm-6 col-lg-4 mx-auto">
+                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                        <!-- Thumb -->
+                        <div class="speaker-single-thumb">
+                            <img src="{% static 'img/semra.jfif' %}" alt="">
+                        </div>
+                        <!-- Social Info -->
+                        <div class="social-info">
+                            <a href="#"><i class="zmdi zmdi-facebook"></i></a>
+                            <a href="#"><i class="zmdi zmdi-instagram"></i></a>
+                            <a href="#"><i class="zmdi zmdi-twitter"></i></a>
+                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
+                        </div>
+                        <!-- Info -->
+                        <div class="speaker-info">
+                            <h5>HALKLA İLİŞKİLER KOORDİNATÖRLÜĞÜ BAŞKANI</h5>
+                            <p>Semra Bostan
+</p>
+                        </div>
+                    </div>
+                </div>
+  <div class="col-12 col-sm-6 col-lg-4 mx-auto mx-auto">
+                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                        <!-- Thumb -->
+                        <div class="speaker-single-thumb">
+                            <img src="{% static 'img/ozar.jfif' %}" alt="">
+                        </div>
+                        <!-- Social Info -->
+                        <div class="social-info">
+                            <a href="#"><i class="zmdi zmdi-facebook"></i></a>
+                            <a href="#"><i class="zmdi zmdi-instagram"></i></a>
+                            <a href="#"><i class="zmdi zmdi-twitter"></i></a>
+                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
+                        </div>
+                        <!-- Info -->
+                        <div class="speaker-info">
+                            <h5>SOSYAL ETKİNLİK KOORDİNATÖRLÜĞÜ BAŞKANI</h5>
+                            <p>Ozar Uncu
+
+</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                    <div class="col-12 col-sm-6 col-lg-4 mx-auto mx-auto">
+                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                        <!-- Thumb -->
+                        <div class="speaker-single-thumb">
+                            <img src="{% static 'img/numan.jfif' %}" alt="">
+                        </div>
+                        <!-- Social Info -->
+                        <div class="social-info">
+                            <a href="#"><i class="zmdi zmdi-facebook"></i></a>
+                            <a href="#"><i class="zmdi zmdi-instagram"></i></a>
+                            <a href="#"><i class="zmdi zmdi-twitter"></i></a>
+                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
+                        </div>
+                        <!-- Info -->
+                        <div class="speaker-info">
+                            <h5>TEKNİK ETKİNLİK KOORDİNATÖRLÜĞÜ BAŞKANI</h5>
+                            <p>Numan Buğra Öztürk
+
+</p>
+                        </div>
+                    </div>
+                </div>
+
+   <div class="col-12 col-sm-6 col-lg-4 mx-auto">
+                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                        <!-- Thumb -->
+                        <div class="speaker-single-thumb">
+                            <img src="{% static 'img/erturk.jpeg' %}" alt="">
+                        </div>
+                        <!-- Social Info -->
+                        <div class="social-info">
+                            <a href="#"><i class="zmdi zmdi-facebook"></i></a>
+                            <a href="#"><i class="zmdi zmdi-instagram"></i></a>
+                            <a href="#"><i class="zmdi zmdi-twitter"></i></a>
+                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
+                        </div>
+                        <!-- Info -->
+                        <div class="speaker-info">
+                            <h5>AR-GE BİRİMLERİ BAŞKANI
+</h5>
+                            <p>Ertürk Gürses
+</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+               <!-- Single Speaker Area -->
+
+
+
+                <!-- Single Speaker Area -->
+
+                <!-- Single Speaker Area -->
+
+
+                <!-- Single Speaker Area -->
+        <div class="row">
+            <div class="col-12 col-sm-6 col-lg-4 mx-auto">
+                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                        <!-- Thumb -->
+                        <div class="speaker-single-thumb">
+                            <img src="{% static 'img/tukuc.jfif' %}" alt="">
+                        </div>
+                        <!-- Social Info -->
+                        <div class="social-info">
+                            <a href="#"><i class="zmdi zmdi-facebook"></i></a>
+                            <a href="#"><i class="zmdi zmdi-instagram"></i></a>
+                            <a href="#"><i class="zmdi zmdi-twitter"></i></a>
+                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
+                        </div>
+                        <!-- Info -->
+                        <div class="speaker-info">
+                            <h5>KURUMSAL İLİŞKİLER KOORDİNATÖRLÜĞÜ EŞBAŞKANI</h5>
+                            <p>Oğuzhan Tüküç
+</p>
+                        </div>
+                    </div>
+                </div>
+              <div class="col-12 col-sm-6 col-lg-4 mx-auto">
+                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                        <!-- Thumb -->
+                        <div class="speaker-single-thumb">
+                            <img src="{% static 'img/yonca.jfif' %}" alt="">
+                        </div>
+                        <!-- Social Info -->
+                        <div class="social-info">
+                            <a href="#"><i class="zmdi zmdi-facebook"></i></a>
+                            <a href="#"><i class="zmdi zmdi-instagram"></i></a>
+                            <a href="#"><i class="zmdi zmdi-twitter"></i></a>
+                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
+                        </div>
+                        <!-- Info -->
+                        <div class="speaker-info">
+                            <h5>KURUMSAL İLİŞKİLER KOORDİNATÖRLÜĞÜ EŞBAŞKANI</h5>
+                            <p>Yonca Er
+</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+                <!-- Single Speaker Area -->
+
+        <div class="row">  <!-- Single Speaker Area -->
+                <div class="col-12 col-sm-6 col-lg-4 mx-auto">
+                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                        <!-- Thumb -->
+                        <div class="speaker-single-thumb">
+                            <img src="{% static 'img/zeynep.jfif' %}" alt="">
+                        </div>
+                        <!-- Social Info -->
+                        <div class="social-info">
+                            <a href="#"><i class="zmdi zmdi-facebook"></i></a>
+                            <a href="#"><i class="zmdi zmdi-instagram"></i></a>
+                            <a href="#"><i class="zmdi zmdi-twitter"></i></a>
+                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
+                        </div>
+                        <!-- Info -->
+                        <div class="speaker-info">
+                            <h5>REKLAM TANITIM KOORDİNATÖRLÜĞÜ EŞBAŞKANI</h5>
+                            <p>Zeynep Sude Kabal
+</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Speaker Area -->
+                <div class="col-12 col-sm-6 col-lg-4 mx-auto">
+                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                        <!-- Thumb -->
+                        <div class="speaker-single-thumb">
+                            <img src="{% static 'img/vahap.jfif' %}" alt="">
+                        </div>
+                        <!-- Social Info -->
+                        <div class="social-info">
+                            <a href="#"><i class="zmdi zmdi-facebook"></i></a>
+                            <a href="#"><i class="zmdi zmdi-instagram"></i></a>
+                            <a href="#"><i class="zmdi zmdi-twitter"></i></a>
+                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
+                        </div>
+                        <!-- Info -->
+                        <div class="speaker-info">
+                            <h5>REKLAM TANITIM KOORDİNATÖRLÜĞÜ EŞBAŞKANI</h5>
+                            <p>Vahap Can Delikaya
+</p>
+                        </div>
+                    </div>
+                </div>
+
+
+        </div>
+                        </div>
+
+    </div></div>
+
+
+    </section>
+    <!-- Our Speakings Area End -->
+
+
+
+    <!-- Contact Area Start -->
+    <section class="contact-our-area section-padding-100-0">
+        <div class="container">
+            <div class="row">
+                <!-- Heading -->
+                <div class="col-12">
+                    <div class="section-heading-2 text-center wow fadeInUp" data-wow-delay="300ms">
+                        <p>Sorunuz Mu Var?</p>
+                        <h4>Bize Ulaşın</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-between">
+                <div class="col-12 col-sm-3">
+                    <div class="contact-information mb-100">
+                        <!-- Single Contact Info -->
+                        <div class="single-contact-info wow fadeInUp" data-wow-delay="300ms">
+                            <p>Adres:</p>
+                            <h6>Hacettepe Üniversitesi Beytepe Kampüsü</h6>
+                        </div>
+                        <!-- Single Contact Info -->
+                        <div class="single-contact-info wow fadeInUp" data-wow-delay="300ms">
+                            <p>Phone:</p>
+                            <h6>(1212121212</h6>
+                        </div>
+                        <!-- Single Contact Info -->
+                        <div class="single-contact-info wow fadeInUp" data-wow-delay="300ms">
+                            <p>Email:</p>
+                            <h6>acmhacettepe@gmail.com</h6>
+                        </div>
+                        <!-- Single Contact Info -->
+                        <div class="single-contact-info wow fadeInUp" data-wow-delay="300ms">
+                            <p>Website:</p>
+                            <h6>www.acm.com</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-8">
+                    <!-- Contact Form -->
+                    <div class="contact_from_area mb-100 clearfix wow fadeInUp" data-wow-delay="300ms">
+                        <div class="contact_form">
+                            <form action="mail.php" method="post" id="main_contact_form">
+                                <div class="contact_input_area">
+                                    <div id="success_fail_info"></div>
+                                    <div class="row">
+                                        <!-- Form Group -->
+                                        <div class="col-12 col-lg-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control mb-30" name="name" id="name" placeholder="Ad">
+                                            </div>
+                                        </div>
+                                        <!-- Form Group -->
+                                        <div class="col-12 col-lg-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control mb-30" name="name" id="name2" placeholder="Soyad">
+                                            </div>
+                                        </div>
+                                        <!-- Form Group -->
+                                        <div class="col-12 col-lg-6">
+                                            <div class="form-group">
+                                                <input type="email" class="form-control mb-30" name="email" id="email" placeholder="E-mail">
+                                            </div>
+                                        </div>
+                                        <!-- Form Group -->
+                                        <div class="col-12 col-lg-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control mb-30" name="subject" id="subject" placeholder="Telefon Numarası">
+                                            </div>
+                                        </div>
+                                        <!-- Form Group -->
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <textarea name="message" class="form-control mb-30" id="message" cols="30" rows="6" placeholder="Mesaj "></textarea>
+                                            </div>
+                                        </div>
+                                        <!-- Button -->
+                                        <div class="col-12">
+                                            <button type="submit" class="btn confer-btn">Mesajı Gönder <i class="zmdi zmdi-long-arrow-right"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Area End -->
+
+    <!-- Footer Area Start -->
+    <footer class="footer-area bg-img bg-overlay-2 section-padding-100-0">
+        <!-- Main Footer Area -->
+        <div class="main-footer-area">
+            <div class="container">
+                <div class="row">
+                    <!-- Single Footer Widget Area -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget mb-60 wow fadeInUp" data-wow-delay="300ms">
+                            <!-- Footer Logo -->
+                            <a href="#" class="footer-logo"><img style="width: 60%" src="{% static 'img/beyaz.png' %}" alt=""></a>
+                            <p>Aile Hortumu</p>
+
+                            <!-- Social Info -->
+                            <div class="social-info">
+                                <a href="#"><i class="zmdi zmdi-facebook"></i></a>
+                                <a href="#"><i class="zmdi zmdi-instagram"></i></a>
+                                <a href="#"><i class="zmdi zmdi-twitter"></i></a>
+                                <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Footer Widget Area -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget mb-60 wow fadeInUp" data-wow-delay="300ms">
+                            <!-- Widget Title -->
+                            <h5 class="widget-title">İletişim</h5>
+
+                            <!-- Contact Area -->
+                            <div class="footer-contact-info">
+                                <p><i class="zmdi zmdi-map"></i> Hacettepe Üniversitesi</p>
+                                <p><i class="zmdi zmdi-phone"></i> (121212121221)</p>
+                                <p><i class="zmdi zmdi-email"></i> acmhacettepe@gmail.com</p>
+                                <p><i class="zmdi zmdi-globe"></i> www.acm.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Footer Widget Area -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget mb-60 wow fadeInUp" data-wow-delay="300ms">
+                            <!-- Widget Title -->
+
+                            <!-- Footer Nav -->
+                            <ul class="footer-nav">
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Single Footer Widget Area -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget mb-60 wow fadeInUp" data-wow-delay="300ms">
+                            <!-- Widget Title -->
+                            <h5 class="widget-title">Galeri</h5>
+
+                            <!-- Footer Gallery -->
+                            <div class="footer-gallery">
+                                <div class="row">
+                                    {% for gonderi in gonderiler %}
+                                    <div class="col-4">
+                                        <a href="{{ gonderi.blog_resim.url}}" class="single-gallery-item"><img src=" {{ gonderi.slide_resim.url}}" alt=""></a>
+                                    </div>
+                                   {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copywrite Area -->
+        <div class="container">
+            <div class="copywrite-content">
+                <div class="row">
+                    <!-- Copywrite Text -->
+                    <div class="col-12 col-md-6">
+                        <div class="copywrite-text">
+                            <p>
+                                ACM Hacettepe Devolopers
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Footer Menu -->
+                    <div class="col-12 col-md-6">
+                        <div class="footer-menu">
+                            <ul class="nav">
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Area End -->
+
+    <!-- **** All JS Files ***** -->
+    <!-- jQuery 2.2.4 -->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <!-- Popper -->
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <!-- Bootstrap -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <!-- All Plugins -->
+    <script src="{% static 'js/confer.bundle.js' %}"></script>
+    <!-- Active -->
+    <script src="{% static 'js/default-assets/active.js' %}"></script>
+
+</body>
+
+</html>
